@@ -1,6 +1,6 @@
-# README
+# README de Startup FoodTech
 
-## Startup FoodTech
+## Qu'est-ce que c'est ?
 
 Cette app Ruby on Rails est la landing page d'un restaurant gastronomique de kebab. Elle a été conçue par Diane.
 
