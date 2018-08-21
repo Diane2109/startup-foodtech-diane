@@ -1,0 +1,287 @@
+/*
+    Style pour le tab
+*/
+
+html
+{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    height: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+h1
+{
+  text-align: center;
+  background: linear-gradient(to right, #ff9472, #f2709c);
+  width: 100%;
+  padding-top: 10px;
+  height: 60px;
+  color: white;
+  margin: 0;
+}
+
+h3
+{
+  color: black;
+}
+
+.tableau
+{
+  margin: 50px 120px;
+}
+
+.tableau ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tableau ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: #888;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer;
+
+}
+.tableau ul li:hover {
+    color: #fff;
+    background: #ff9472;
+}
+
+.tableau ul li.active {
+    color: #fff;
+    background: #f2709c;
+}
+
+.tableau .panel {
+    display:none;
+    background: #f2709c;
+    padding: 30px;
+    border-radius: 0 5px 5px 5px;
+}
+
+.tableau .panel.active {
+    display:block;
+}
+
+
+
+
+
+
+
+
+
+/*
+    Style pour le carroussel
+*/
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-slides
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0 0;
+  padding: 0;
+
+}
+
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  position: relative;
+  align-items: center;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    size: cover;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  color: #666;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+/*
+Web responsive
+*/
+
+
+@media screen and (max-width: 500px)
+{
+
+
+  html
+  {
+    padding: 0;
+    margin: 0;
+  }
+
+  body
+  {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container
+  {
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+  h1
+  {
+    font-size: 3.5em;
+    height: 250px;
+    width: 100%;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+
+  }
+
+  .subtitlekebab
+  {
+    display: none;
+  }
+
+
+  .tableau
+  {
+    margin: 20px 30px;
+  }
+
+
+  .tableau ul li {
+      list-style-type: none;
+      display: flex;
+      height: 40px;
+      text-align: center;
+      border-radius: 5px;
+      margin: 15px 0;
+      width: 100%;
+    }
+
+
+
+
+
+
+}
