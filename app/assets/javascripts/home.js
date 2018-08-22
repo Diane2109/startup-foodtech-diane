@@ -1,4 +1,6 @@
-
+$(document).ready(function() {
+    
+    
 $(function() {
 
     $('.tableau .tabs li').on('click', function() {
@@ -77,3 +79,5 @@ function showSlidesbis() {
     slides[slideIndex-1].style.display = "block";
     setTimeout(showSlidesbis, 5000);
 }
+    
+    });
